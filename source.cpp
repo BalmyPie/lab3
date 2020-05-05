@@ -32,9 +32,11 @@ void mas3gen(int N, int M, int *mas1, int *mas2, int *mas3){
 }
 
 void massort(int N, int M, int *mas3){
-    for (int i = 0; i < M+N; i++){
-        if(mas3[i] > mas3[i+1]){
-            swap(mas3[i],mas3[i+1]);
+    for (int j = 0; j < N + M; j++) {
+        for (int i = 0; i < M + N-1; i++) {
+            if (mas3[i] > mas3[i + 1]) {
+                swap(mas3[i], mas3[i + 1]);
+            }
         }
     }
         for(int k=0;k<N+M;k++)

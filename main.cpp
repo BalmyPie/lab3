@@ -9,12 +9,12 @@ int main(){
     SetConsoleCP(866);
     SetConsoleOutputCP(866);
     #endif
-    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¿ÐµÑ€Ð²Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
+    cout << "Ââåäèòå ðàçìåð ïåðâîãî ìàññèâà: ";
     int N;
     cin >> N;
     int *mas1 = new int[N];
     mas1gen(N, mas1);
-    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð²Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
+    cout << "Ââåäèòå ðàçìåð âòîðîãî ìàññèâà: ";
     int M;
     cin >> M;
     int *mas2 = new int[M];
@@ -22,4 +22,6 @@ int main(){
     int *mas3 = new int[N+M];
     cout << endl;
     mas3gen(N, M, mas1, mas2, mas3);
+    cout << endl;
+    massort(N, M, mas3);
 }
