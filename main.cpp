@@ -9,7 +9,6 @@ int main(){
     SetConsoleCP(866);
     SetConsoleOutputCP(866);
     #endif
-/*     setlocale(LC_ALL, "Russian"); */
     cout << "Введите размер первого массива: ";
     int N;
     cin >> N;
@@ -21,5 +20,6 @@ int main(){
     int *mas2 = new int[M];
     mas2gen(M, mas2);
     int *mas3 = new int[N+M];
+    cout << endl;
     mas3gen(N, M, mas1, mas2, mas3);
 }
