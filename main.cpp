@@ -4,7 +4,7 @@
 #endif
 
 int main(){
-    srand(time(NULL));
+    srand(time(NULL));//patch
     #ifdef _WIN32
     SetConsoleCP(866);
     SetConsoleOutputCP(866);
